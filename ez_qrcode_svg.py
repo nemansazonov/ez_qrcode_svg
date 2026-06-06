@@ -198,7 +198,7 @@ btn_clear_text = tk.Button(inputs_frame, text=UI_CANCEL_CHAR, command=clear_text
 btn_clear_text.grid(row=3, column=1, pady=2)
 
 # Размер рамки (центрируем под полями)
-tk.Label(inputs_frame, text="Отступ от края размерах\nминимального модуля QR-кода («квадратика»):").grid(row=4, column=0, columnspan=2, pady=(5, 0))
+tk.Label(inputs_frame, text="Отступ от края в размерах\nминимального модуля QR-кода («квадратика»):").grid(row=4, column=0, columnspan=2, pady=(5, 0))
 entry_border = tk.Entry(inputs_frame, width=10, justify="center")
 entry_border.insert(0, SVG_PADDING)
 entry_border.grid(row=5, column=0, columnspan=2, pady=2)
@@ -208,7 +208,7 @@ grid_frame = tk.Frame(root)
 grid_frame.pack(pady=15, padx=10)
 
 # Строка 1: QR-код
-tk.Label(grid_frame, text="Цвет кода:", anchor="w", width=12).grid(row=0, column=0, padx=5, pady=5)
+tk.Label(grid_frame, text="Цвет QR-кода:", anchor="w", width=12).grid(row=0, column=0, padx=5, pady=5)
 entry_qr_hex = tk.Entry(grid_frame, width=10, font=("Consolas", 10))
 entry_qr_hex.insert(0, SVG_COLOR_QR)
 entry_qr_hex.grid(row=0, column=1, padx=5, pady=5)
